@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        
+        <div class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%b %-d, %Y" }}
+            </time>
+            {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+                </span>
+            {% endif %}
+            {% if page.reading_time %}
+                • <span class="reading-time">{{ page.content | reading_time }}</span>
+            {% endif %}
+        </div>
+        
+        {% if page.tags.size > 0 %}
+        <div class="post-tags">
+            {% for tag in page.tags %}
+                <a href="{{ '/tag/' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+        
+        {% if page.categories.size > 0 %}
+        <div class="post-categories">
+            {% for category in page.categories %}
+                <a href="{{ '/category/' | append: category | relative_url }}" class="category">{{ category }}</a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </header>
+    
+    {% if page.toc %}
+    <div class="table-of-contents">
+        <h2>Table of Contents</h2>
+        <div id="toc"></div>
+    </div>
+    {% endif %}
+    
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    
+    {% if page.references %}
+    <div class="references">
+        <h2>References</h2>
+        <ol>
+            {% for ref in page.references %}
+            <li id="ref-{{ forloop.index }}">
+                {% if ref.url %}
+                    <a href="{{ ref.url }}" target="_blank">{{ ref.title }}</a>
+                {% else %}
+                    {{ ref.title }}
+                {% endif %}
+                {% if ref.authors %} - {{ ref.authors }}{% endif %}
+                {% if ref.year %} ({{ ref.year }}){% endif %}
+                {% if ref.journal %} - {{ ref.journal }}{% endif %}
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+    {% endif %}
+    
+    <div class="post-navigation">
+        {% if page.previous.url %}
+        <div class="prev-post">
+            <a href="{{ page.previous.url | relative_url }}" rel="prev">
+                <span class="nav-label">← Previous</span>
+                <span class="nav-title">{{ page.previous.title }}</span>
+            </a>
+        </div>
+        {% endif %}
+        
+        {% if page.next.url %}
+        <div class="next-post">
+            <a href="{{ page.next.url | relative_url }}" rel="next">
+                <span class="nav-label">Next →</span>
+                <span class="nav-title">{{ page.next.title }}</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+    
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

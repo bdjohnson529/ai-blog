@@ -1,0 +1,84 @@
+# Site settings
+title: "Applied AI Research Blog"
+description: "Technical blog documenting experiences learning and building Applied AI projects"
+baseurl: ""
+url: "https://your-domain.com"
+author:
+  name: "Your Name"
+  email: "your-email@example.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# Jekyll 4.x configuration
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+  math_engine: mathjax
+  hard_wrap: false
+
+# Rouge settings
+rouge:
+  line_numbers: true
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+      show_date: true
+      reading_time: true
+      toc: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# Custom variables
+tag_page_layout: tag_page
+tag_page_dir: tag
+category_page_layout: category_page
+category_page_dir: category
+
+# MathJax configuration
+mathjax:
+  source: https://polyfill.io/v3/polyfill.min.js?features=es6
+  config: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

@@ -1,0 +1,42 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+<div class="categories-page">
+    <h1>All Categories</h1>
+    
+    <div class="category-list">
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        <a href="#{{ category[0] | slugify }}" class="category">
+            {{ category[0] }} ({{ category[1].size }})
+        </a>
+        {% endfor %}
+    </div>
+    
+    <div class="category-sections">
+        {% for category in categories %}
+        <section id="{{ category[0] | slugify }}" class="category-section">
+            <h2>{{ category[0] }}</h2>
+            <ul class="post-list">
+                {% for post in category[1] %}
+                <li>
+                    <h3>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    <p class="post-meta">
+                        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                        {% if post.author %} • {{ post.author }}{% endif %}
+                    </p>
+                    {% if post.excerpt %}
+                    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endfor %}
+    </div>
+</div>
