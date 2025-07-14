@@ -132,9 +132,10 @@ pre,
 code {
     font-family: $code-font-family;
     @include relative-font-size(0.9375);
-    border: 1px solid $grey-color-light;
+    border: 1px solid #555555;
     border-radius: 3px;
-    background-color: #f8f8f8;
+    background-color: #2d2d2d;
+    color: #ffffff;
 }
 
 code {

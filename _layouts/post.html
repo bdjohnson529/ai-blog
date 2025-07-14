@@ -19,22 +19,6 @@ layout: default
                 • <span class="reading-time">{{ page.content | reading_time }}</span>
             {% endif %}
         </div>
-        
-        {% if page.tags.size > 0 %}
-        <div class="post-tags">
-            {% for tag in page.tags %}
-                <a href="{{ '/tag/' | append: tag | relative_url }}" class="tag">{{ tag }}</a>
-            {% endfor %}
-        </div>
-        {% endif %}
-        
-        {% if page.categories.size > 0 %}
-        <div class="post-categories">
-            {% for category in page.categories %}
-                <a href="{{ '/category/' | append: category | relative_url }}" class="category">{{ category }}</a>
-            {% endfor %}
-        </div>
-        {% endif %}
     </header>
     
     {% if page.toc %}
