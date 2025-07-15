@@ -363,7 +363,7 @@
     }
     
     ul {
-        margin-left: $spacing-unit / 2;
+        margin-left: 0;
         list-style: none;
         
         li {
@@ -372,9 +372,64 @@
             a {
                 text-decoration: none;
                 color: $text-color;
+                display: block;
+                padding: 2px 0;
                 
                 &:hover {
                     color: $brand-color;
+                }
+            }
+            
+            // H2 level - no indentation
+            &.toc-h2 {
+                margin-left: 0;
+                font-weight: 600;
+                
+                a {
+                    @include relative-font-size(1.1);
+                }
+            }
+            
+            // H3 level - first level indentation
+            &.toc-h3 {
+                margin-left: 20px;
+                font-weight: 500;
+                
+                a {
+                    @include relative-font-size(1.0);
+                }
+            }
+            
+            // H4 level - second level indentation
+            &.toc-h4 {
+                margin-left: 40px;
+                font-weight: 400;
+                
+                a {
+                    @include relative-font-size(0.95);
+                    color: lighten($text-color, 10%);
+                }
+            }
+            
+            // H5 level - third level indentation
+            &.toc-h5 {
+                margin-left: 60px;
+                font-weight: 300;
+                
+                a {
+                    @include relative-font-size(0.9);
+                    color: lighten($text-color, 20%);
+                }
+            }
+            
+            // H6 level - fourth level indentation
+            &.toc-h6 {
+                margin-left: 80px;
+                font-weight: 300;
+                
+                a {
+                    @include relative-font-size(0.85);
+                    color: lighten($text-color, 30%);
                 }
             }
         }
