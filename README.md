@@ -2,18 +2,6 @@
 
 A Jekyll-based blog for documenting experiences learning and building Applied AI projects.
 
-## Features
-
-- **Clean, minimalist design** optimized for technical content
-- **Syntax highlighting** for code blocks with copy-to-clipboard functionality
-- **MathJax support** for mathematical equations
-- **Responsive design** that works on all devices
-- **Academic citations** and references support
-- **Tag and category organization**
-- **Reading time estimation**
-- **Table of contents** for long posts
-- **SEO optimization** with jekyll-seo-tag
-
 ## Quick Start
 
 1. **Install dependencies:**

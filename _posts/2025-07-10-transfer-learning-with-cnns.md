@@ -23,7 +23,9 @@ references:
     url: "https://sebastianraschka.com/blog/2023/pytorch-in-one-hour.html"
 ---
 
-Convolutional Neural Networks (CNNs) have existed since 1998 and serve as the backbone of many computer vision tasks, from image classification to object detection [1]. However, training CNNs requires large amounts of labeled data and compute, which can be a barrier for many applications.
+Convolutional Neural Networks (CNNs) have existed since 1998 and serve as the backbone of many computer vision tasks, from image classification to object detection [1].
+
+However, training CNNs requires large amounts of labeled data and compute, which can be a barrier for many applications.
 
 This article explores transfer learning as a solution which adapts pre-trained CNNs for new tasks. Transfer learning allows us to train models with **smaller datasets** and **reduced compute**.
 

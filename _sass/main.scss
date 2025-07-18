@@ -1,11 +1,15 @@
 @charset "utf-8";
 
-// Variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$heading-font-family: "Roboto Slab", serif;
-$code-font-family: "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, "DejaVu Sans Mono", monospace;
+// Import Computer Modern fonts from a reliable CDN
+@import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/cmunrm.css');
+@import url('https://cdn.jsdelivr.net/npm/computer-modern@0.1.2/cmuntt.css');
 
-$base-font-size: 16px;
+// Variables - Using Computer Modern fonts
+$base-font-family: "Computer Modern Serif", "CMU Serif", "Latin Modern Roman", "Times New Roman", "Times", serif;
+$heading-font-family: "Computer Modern Serif", "CMU Serif", "Latin Modern Roman", "Times New Roman", "Times", serif;
+$code-font-family: "Computer Modern Typewriter", "CMU Typewriter Text", "Latin Modern Mono", "JetBrains Mono", "Fira Code", Monaco, Menlo, Consolas, monospace;
+
+$base-font-size: 18px;
 $base-font-weight: 400;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.5;
