@@ -357,8 +357,8 @@
 
 .table-of-contents {
     background-color: adjust-color($grey-color-light, $lightness: 10%);
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    border-right: 1px solid $grey-color-light;
+    //border-radius: 5px;
     padding: ($spacing-unit / 2);
     margin-bottom: $spacing-unit;
 
@@ -366,6 +366,7 @@
     position: sticky;
     top: 20px;
     max-height: calc(100vh - 40px);
+    overflow-y: auto;
 
     h2 {
         @include relative-font-size(1.25);
@@ -393,7 +394,7 @@
             // H2 level - no indentation
             &.toc-h2 {
                 margin-left: 0;
-                font-weight: 600;
+                font-weight: 500;
                 
                 a {
                     @include relative-font-size(1.1);
@@ -403,7 +404,7 @@
             // H3 level - first level indentation
             &.toc-h3 {
                 margin-left: 20px;
-                font-weight: 500;
+                font-weight: 200;
                 
                 a {
                     @include relative-font-size(1.0);
