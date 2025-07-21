@@ -350,13 +350,23 @@
     }
 }
 
+.content-wrapper {
+    display: flex;
+    gap: $spacing-unit;
+}
+
 .table-of-contents {
     background-color: adjust-color($grey-color-light, $lightness: 10%);
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     padding: ($spacing-unit / 2);
     margin-bottom: $spacing-unit;
-    
+
+    flex: 0 0 250px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+
     h2 {
         @include relative-font-size(1.25);
         margin-bottom: ($spacing-unit / 2);
@@ -434,6 +444,10 @@
             }
         }
     }
+}
+
+.main-content {
+    flex: 1; /* Main content takes the remaining space */
 }
 
 /**

@@ -12,8 +12,8 @@ references:
     authors: "LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P."
     year: 1998
     journal: "Proceedings of the IEEE"
-    url: "http://yann.lecun.com/exdb/publis/pdf/lecun98.pdf"
-  - title: "How trasnferrable are features in deep neural networks?"
+    url: "http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf"
+  - title: "How transferrable are features in deep neural networks?"
     authors: "Yosinski, J., Clune, J., Bengio, Y., & Lipson, H."
     year: 2014
     journal: "Advances in Neural Information Processing Systems"
@@ -21,7 +21,7 @@ references:
   - title: "PyTorch in One Hour"
     authors: "Sebastian Raschka"
     year: 2023
-    url: "https://sebastianraschka.com/blog/2023/pytorch-in-one-hour.html"
+    url: "https://sebastianraschka.com/teaching/pytorch-1h/"
 ---
 
 Convolutional Neural Networks (CNNs) have existed since 1998 and serve as the backbone of many computer vision tasks, from image classification to object detection [1].

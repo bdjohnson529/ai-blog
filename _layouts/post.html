@@ -21,15 +21,16 @@ layout: default
         </div>
     </header>
     
-    {% if page.toc %}
-    <div class="table-of-contents">
-        <h2>Table of Contents</h2>
-        <div id="toc"></div>
-    </div>
-    {% endif %}
-    
-    <div class="post-content e-content" itemprop="articleBody">
-        {{ content }}
+    <div class="content-wrapper" style="display: flex; gap: 20px;">
+        {% if page.toc %}
+        <div class="table-of-contents" style="flex: 0 0 25%;">
+            <div id="toc"></div>
+        </div>
+        {% endif %}
+
+        <div class="post-content e-content" itemprop="articleBody"">
+            {{ content }}
+        </div>
     </div>
     
     {% if page.references %}
