@@ -3,7 +3,8 @@ source "https://rubygems.org"
 ruby "3.2.0"
 
 # Jekyll
-gem "jekyll", "~> 4.3"
+# gem "jekyll", "~> 4.3"
+gem "github-pages", group: :jekyll_plugins
 
 # Jekyll plugins
 group :jekyll_plugins do
@@ -36,8 +37,8 @@ gem "webrick", "~> 1.8"
 gem "rouge", "~> 3.30"
 
 # Kramdown for markdown processing
-gem "kramdown", "~> 2.4"
-gem "kramdown-parser-gfm", "~> 1.1"
+# gem "kramdown", "~> 2.4"
+# gem "kramdown-parser-gfm", "~> 1.1"
 
 # Faraday retry middleware
 gem "faraday-retry"

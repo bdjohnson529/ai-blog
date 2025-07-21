@@ -47,7 +47,7 @@
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: math.div($spacing-unit, 2);
+        right: ($spacing-unit / 2);
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
@@ -104,7 +104,7 @@
 
 .footer-heading {
     @include relative-font-size(1.125);
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: ($spacing-unit / 2);
 }
 
 .contact-list,
@@ -116,14 +116,14 @@
 .footer-col-wrapper {
     @include relative-font-size(0.9375);
     color: $grey-color;
-    margin-left: math.div(-$spacing-unit, 2);
+    margin-left: (-$spacing-unit / 2);
     @extend %clearfix;
 }
 
 .footer-col {
     float: left;
-    margin-bottom: math.div($spacing-unit, 2);
-    padding-left: math.div($spacing-unit, 2);
+    margin-bottom: ($spacing-unit / 2);
+    padding-left: ($spacing-unit / 2);
 }
 
 .footer-col-1 {
@@ -165,7 +165,7 @@
 .footer-bottom {
     text-align: center;
     margin-top: $spacing-unit;
-    padding-top: math.div($spacing-unit, 2);
+    padding-top: ($spacing-unit / 2);
     border-top: 1px solid $grey-color-light;
     font-size: $small-font-size;
     color: $grey-color;
@@ -199,7 +199,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: ($spacing-unit / 2);
 }
 
 .post-link {
@@ -253,7 +253,7 @@
 }
 
 .post-tags {
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: ($spacing-unit / 2);
     
     .tag {
         display: inline-block;
@@ -273,7 +273,7 @@
 }
 
 .post-categories {
-    margin-bottom: math.div($spacing-unit, 2);
+    margin-bottom: ($spacing-unit / 2);
     
     .category {
         display: inline-block;
@@ -286,7 +286,7 @@
         text-decoration: none;
         
         &:hover {
-            background-color: color.adjust($brand-color, $lightness: -10%);
+            background-color: adjust-color($brand-color, $lightness: -10%);
         }
     }
 }
@@ -337,29 +337,29 @@
     
     h2 {
         @include relative-font-size(1.5);
-        margin-bottom: math.div($spacing-unit, 2);
+        margin-bottom: ($spacing-unit / 2);
     }
     
     ol {
         margin-left: $spacing-unit;
         
         li {
-            margin-bottom: math.div($spacing-unit, 4);
+            margin-bottom: ($spacing-unit / 4);
             font-size: $small-font-size;
         }
     }
 }
 
 .table-of-contents {
-    background-color: color.adjust($grey-color-light, $lightness: 10%);
+    background-color: adjust-color($grey-color-light, $lightness: 10%);
     border: 1px solid $grey-color-light;
     border-radius: 5px;
-    padding: math.div($spacing-unit, 2);
+    padding: ($spacing-unit / 2);
     margin-bottom: $spacing-unit;
     
     h2 {
         @include relative-font-size(1.25);
-        margin-bottom: math.div($spacing-unit, 2);
+        margin-bottom: ($spacing-unit / 2);
     }
     
     ul {
@@ -407,7 +407,7 @@
                 
                 a {
                     @include relative-font-size(0.95);
-                    color: color.adjust($text-color, $lightness: 10%);
+                    color: adjust-color($text-color, $lightness: 10%);
                 }
             }
             
@@ -418,7 +418,7 @@
                 
                 a {
                     @include relative-font-size(0.9);
-                    color: color.adjust($text-color, $lightness: 20%);
+                    color: adjust-color($text-color, $lightness: 20%);
                 }
             }
             
@@ -429,7 +429,7 @@
                 
                 a {
                     @include relative-font-size(0.85);
-                    color: color.adjust($text-color, $lightness: 30%);
+                    color: adjust-color($text-color, $lightness: 30%);
                 }
             }
         }

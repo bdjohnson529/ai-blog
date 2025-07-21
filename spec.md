@@ -108,3 +108,9 @@ The blog must support:
 - Print-friendly CSS
 - Social sharing buttons
 - Table of contents for long posts
+
+
+## 6. Project Management
+[ ] Initial version
+[ ] CI/CD pipeline setup
+[ ] Deployment
