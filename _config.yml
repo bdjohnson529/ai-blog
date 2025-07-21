@@ -1,8 +1,8 @@
 # Site settings
 title: "Applied AI Research Blog"
 description: "Technical blog documenting experiences learning and building Applied AI projects"
-baseurl: ""
-url: "https://your-domain.com"
+url: "https://bdjohnson529.github.io"
+baseurl: "/ai-blog"
 author:
   name: "Your Name"
   email: "your-email@example.com"
