@@ -39,6 +39,9 @@ gem "rouge", "~> 3.30"
 gem "kramdown", "~> 2.4"
 gem "kramdown-parser-gfm", "~> 1.1"
 
+# Faraday retry middleware
+gem "faraday-retry"
+
 # For development
 group :development do
   # gem "jekyll-admin"

@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:math";
+
 @charset "utf-8";
 
 // Import Computer Modern fonts from a reliable CDN
@@ -21,8 +24,8 @@ $background-color: #fdfdfd;
 $brand-color: #2a7ae4;
 
 $grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: color.adjust($grey-color, $lightness: -25%);
 
 $table-text-align: left;
 

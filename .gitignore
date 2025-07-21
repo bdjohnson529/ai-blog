@@ -23,6 +23,7 @@ vendor/
 *.swp
 *.swo
 *~
+.keys
 
 # OS
 .DS_Store
