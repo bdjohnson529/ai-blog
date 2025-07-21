@@ -1,45 +1,16 @@
 ---
 layout: page
-title: About
 permalink: /about/
+notitle: true
 ---
 
-# About This Blog
 
-Welcome to my Applied AI Research Blog! This is a space where I document my journey through the fascinating world of artificial intelligence, machine learning, and their practical applications.
+## About Me
 
-## What You'll Find Here
+Hello! My name is Ben Johnson and this is my blog. Born in Denver, studied physics at USC, and now living in London.
 
-This blog focuses on:
+Physics is taught from first principles. You begin by learning foundational laws which serve as the basis for all problem solving. One of the best physicists to demonstrate this approach is Richard Feynman - I'd recommend reading **Six Easy Pieces** to understand his approach to problem solving.
 
-- **Applied AI Projects**: Real-world implementations of AI systems and their challenges
-- **Machine Learning Research**: Insights from academic papers and their practical implications
-- **Technical Deep Dives**: Detailed explanations of algorithms, architectures, and methodologies
-- **Code Examples**: Working implementations with explanations and best practices
-- **Lessons Learned**: What works, what doesn't, and why
+Understanding the foundations is powerful. This blog focuses on Applied AI, but will also discuss foundational AI research. My hope is that these articles will help engineers and product folks better understand the capabilities of the models, and help researchers better understand applications.
 
-## My Background
-
-I'm passionate about bridging the gap between theoretical AI research and practical applications. My interests span:
-
-- Deep Learning and Neural Networks
-- Natural Language Processing
-- Computer Vision
-- Reinforcement Learning
-- MLOps and Production Systems
-
-## Technical Focus
-
-The content here is aimed at:
-- Applied AI practitioners
-- Machine learning researchers
-- Software engineers working with AI systems
-- Anyone interested in the technical details of AI implementation
-
-## Get In Touch
-
-Feel free to reach out if you'd like to discuss any of the topics covered here, collaborate on projects, or share your own insights.
-
----
-
-*This blog is built with Jekyll and deployed on AWS. All code examples are available on GitHub unless otherwise noted.*
+Please reach out on [LinkedIn](https://www.linkedin.com/in/benjamin-johnson-62b92b63/) if you want to connect!
