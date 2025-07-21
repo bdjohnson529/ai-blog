@@ -25,13 +25,13 @@ end
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem "http_parser.rb", :platforms => [:jruby]
 
 # Webrick for Ruby 3.0+
-gem "webrick", "~> 1.8"
+gem "webrick"
 
 # Rouge for syntax highlighting
-gem "rouge", "~> 3.30"
+gem "rouge"
 
 # Kramdown for markdown processing
 # gem "kramdown", "~> 2.4"
