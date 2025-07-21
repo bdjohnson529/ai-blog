@@ -1,11 +1,10 @@
 # Site settings
 title: "Applied AI Research Blog"
-description: "Technical blog documenting experiences learning and building Applied AI projects"
+description: "Applied AI research and deployment."
 url: "https://bdjohnson529.github.io"
 baseurl: "/ai-blog"
 author:
-  name: "Your Name"
-  email: "your-email@example.com"
+  name: "Ben Johnson"
 
 # Build settings
 markdown: kramdown

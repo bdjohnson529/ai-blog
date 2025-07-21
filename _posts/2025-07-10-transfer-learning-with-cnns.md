@@ -5,7 +5,8 @@ date: 2025-07-10 10:00:00 -0500
 author: "Ben Johnson"
 math: true
 toc: true
-reading_time: true
+reading_time: "5 min @ 250 wpm"
+excerpt: "Training CNNs from scratch requires massive data and compute. Transfer learning is a fine-tuning technique which uses pre-trained models - enabling customization with limited data and compute."
 references:
   - title: "Gradient-Based Learning Applied to Document Recognition"
     authors: "LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P."

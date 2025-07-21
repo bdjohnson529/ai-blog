@@ -111,6 +111,8 @@ The blog must support:
 
 
 ## 6. Project Management
-[ ] Initial version
-[ ] CI/CD pipeline setup
-[ ] Deployment
+[X] Initial version
+[X] CI/CD pipeline setup
+[X] Deployment
+
+[ ] Styling
