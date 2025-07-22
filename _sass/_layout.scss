@@ -368,6 +368,10 @@
     max-height: calc(100vh - 40px);
     overflow-y: auto;
 
+    @include media-query($on-palm) {
+        display: none; /* Hide on mobile screens */
+    }
+
     h2 {
         @include relative-font-size(1.25);
         margin-bottom: ($spacing-unit / 2);
