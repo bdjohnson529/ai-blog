@@ -1,0 +1,24 @@
+.table-container {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between tables */
+    gap: 20px; /* Optional: Adds space between tables */
+}
+
+.table-wrapper {
+    width: 48%; /* Each table takes up 48% of the container width */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
